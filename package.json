@@ -1,0 +1,23 @@
+{
+  "name": "backendproyecto_nigth",
+  "version": "0.9.0",
+  "description": "backend para el proyecto final de ejemplo de los grupos 1,2,6 y 59",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anfejaramillo/backendproyecto_nigth.git"
+  },
+  "author": "anfejaramillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anfejaramillo/backendproyecto_nigth/issues"
+  },
+  "homepage": "https://github.com/anfejaramillo/backendproyecto_nigth#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  }
+}
