@@ -4,10 +4,25 @@ let mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 //definir la configuracion del esquema
 let schemaConfig = {
-    username: String,
+    username: {
+        type: String,
+        required: true,
+    },
+    fotoPerfil: String, //    carpetafFotosServidor/foto_usuario_lk12klbh1skdjasd.jpg
     password: String,
     email: String,
     firstName: String,
+    trofeos: [
+        {
+            nombre: String,
+            altura: Number,
+            foto: String,
+        },
+    ],
+    direccion: {
+        calle: String,
+        num: String,
+    },
 };
 // Object of schema
 const userSchema = new Schema(schemaConfig);
@@ -69,7 +84,6 @@ async function getAllUsers() {
         return {};
     }
 }
-async function getUser(id) {}
 
 module.exports = {
     userSchema,
@@ -77,5 +91,4 @@ module.exports = {
     deleteUser,
     getAllUsers,
     findUserById,
-    getUser,
 };

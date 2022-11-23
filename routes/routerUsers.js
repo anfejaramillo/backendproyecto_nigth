@@ -17,4 +17,10 @@ router.get("/all", async function (req, res) {
     res.json(result);
 });
 
+router.post("/create", async function (req, res) {
+    let newUser = req.body;
+    let result = await userSchema.createUser(newUser);
+    res.json(result);
+});
+
 module.exports = router;
